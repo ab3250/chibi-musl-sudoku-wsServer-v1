@@ -1,0 +1,23 @@
+{
+  "name": "8-Queens",
+  "version": "1.0.0",
+  "description": "8-Queens",
+  "main": "main.js",
+  "scripts": {   
+    "start": "sleep 1 && electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^23.2.1",
+    "electron-packager": "^17.1.1"
+  }
+}
