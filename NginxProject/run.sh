@@ -7,11 +7,11 @@
 
 
 	sudo killall nginx > /dev/null 2>&1
-	set nginx web root directory
-	#sed -i '/.*set \$rtdir.*/c\set $rtdir '"$(pwd)"';' $(pwd)/nginx/conf/nginx.conf
+	#set nginx web root directory
+	sed -i '/.*set \$rtdir.*/c\set $rtdir '"$(pwd)"';' $(pwd)/nginx/conf/nginx.conf
 	sudo $(pwd)/nginx/sbin/nginx -c $(pwd)/nginx/conf/nginx.conf
 
 
-/usr/bin/google-chrome-stable http://localhost:8000/index.html 2> /dev/null  &
+/usr/bin/google-chrome-stable http://localhost:80/www/index.html 2> /dev/null  &
 
 LD_LIBRARY_PATH=$(pwd)/lib CHIBI_MODULE_PATH="$(pwd)/lib/chibi" CHIBI_IGNORE_SYSTEM_PATH=1 ./chibi-scheme -r main.scm &

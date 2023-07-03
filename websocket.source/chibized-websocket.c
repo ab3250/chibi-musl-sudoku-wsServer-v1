@@ -53,7 +53,7 @@ int ws_start(void)
  usleep(500000);
  setbuf(stdout, NULL); 
  printf("Server Initialized!\n");  
- ws_socket(&evs, 8080, 0); 
+ ws_socket(&evs, 8000, 0); 
 
  	
 }

@@ -7,3 +7,4 @@ sleep 1
 LD_LIBRARY_PATH=$(pwd)/lib CHIBI_MODULE_PATH="$(pwd)/lib/chibi" CHIBI_IGNORE_SYSTEM_PATH=1 ./chibi-scheme -r main.scm &
 disown
 exit
+exit
