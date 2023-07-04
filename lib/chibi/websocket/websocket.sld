@@ -1,4 +1,4 @@
-(define-library (ws websocket)
+(define-library (websocket websocket)
   (import
     (scheme base))
   (export

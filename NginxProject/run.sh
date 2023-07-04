@@ -12,6 +12,6 @@
 	sudo $(pwd)/nginx/sbin/nginx -c $(pwd)/nginx/conf/nginx.conf
 
 
-/usr/bin/google-chrome-stable http://localhost:80/www/index.html 2> /dev/null  &
+/usr/bin/google-chrome-stable http://localhost:8000/www/index.html 2> /dev/null  &
 
-LD_LIBRARY_PATH=$(pwd)/lib CHIBI_MODULE_PATH="$(pwd)/lib/chibi" CHIBI_IGNORE_SYSTEM_PATH=1 ./chibi-scheme -r main.scm &
+LD_LIBRARY_PATH=$(pwd)/../lib CHIBI_MODULE_PATH="$(pwd)/../lib/chibi" CHIBI_IGNORE_SYSTEM_PATH=1 ../lib/chibi-scheme -r main.scm &

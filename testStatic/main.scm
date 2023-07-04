@@ -4,7 +4,7 @@
     (chibi time)
     (chibi io) 
     (scheme vector)    
-    (websocket websocket))
+    (websocket))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; global variables
