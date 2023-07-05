@@ -8,7 +8,7 @@
 ;@param idx Websocket connection index.
 ;@param fd Client file descriptor.
 
-(define-c int ws_start())
+(define-c int ws_start(int))
 
 (define-c int ws_sendframe(int (const string) unsigned-long bool int))
 
@@ -30,4 +30,6 @@
 
 (define-c-struct ws_events)
 
-
+;add above last line
+; ctx2 = ctx;  
+; sexp_preserve_object(ctx, ctx2);
